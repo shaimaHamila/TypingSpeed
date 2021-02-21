@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Typing Speed Test</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all">
+    <link rel="stylesheet" href="typingSpeedTester_style.css">
+</head>
+
+<body class="bodyLight">
+    <header class="masthead">
+        <h1>Test Your Typing Speed</h1>   
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" value="OFF">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Dark mode</label>
+        </div>  
+    </header>
+
+    <main class="main">
+        <article class="intro">
+            <p>
+                This is a typing test. Your goal is to duplicate the provided text, 
+                EXACTLY, in the field below. The timer starts when you start typing, 
+                and only stops when you match this text exactly. Good Luck!
+            </p>
+        </article><!-- .intro -->
+
+        <section class="test-area">
+            <div id="origin-text" class="origin-text-light">
+                <p class="pLight">The text to test.</p>
+            </div><!-- #origin-text -->
+
+            <div class="test-wrapper">
+                <textarea class="textareaLight" id="test-area" name="textarea" rows="6" placeholder="The clock starts when you start typing."></textarea>
+            </div><!-- .test-wrapper -->
+
+            <div class="meta">
+                <section id="clock">
+                    <button id="timer" class="timer timerLight">00:00:00</button>
+                </section>
+
+                <button id="reset" class="resetLight">Start over</button>
+            </div><!-- .meta -->
+
+        </section><!-- .test-area -->
+    </main>
+    <script src="typingSpeedTester.js" async></script>
+
+</body>
+
+</html>
