@@ -1,1 +1,1 @@
-# Testing your faster typing
+# JS Typing Speed Test
